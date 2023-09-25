@@ -1,4 +1,4 @@
-# CLinic-App
+# Parto Seguro
 
 Para instalar as dependencias do Projeto :
 npm i
