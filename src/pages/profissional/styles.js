@@ -8,8 +8,6 @@ export const Container = styled.View`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: ${lightTheme.colors.primary[1]};
-  background-color: #FCCCD4;
 `;
 
 export const Form = styled.View`
