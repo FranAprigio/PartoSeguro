@@ -3,8 +3,8 @@ import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AuthProvider from "../context/auth";
-import { Profissional, Menu, Initial, Paciente } from "../pages";
-import { Ionicons } from "@expo/vector-icons";
+import { Profissional, Menu, Initial, Paciente, Orientacoes, ConceitosImportantes, LinksUteis, Faq } from "../pages";
+import { getHeaderOptions } from "../components/header";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,38 +32,41 @@ const Route = () => {
           <Stack.Screen
             name="Profissional"
             component={Profissional}
-            options={({ navigation }) => ({
-              headerTransparent: true,
-              headerTitleStyle: { color: "#fff" },
-              title: "Voltar",
-              headerLeft: () => (
-                <Ionicons
-                  name="arrow-back"
-                  size={24}
-                  color="#000"
-                  onPress={() => navigation.goBack()}
-                  style={{ marginLeft: 10, color: "#fff" }}
-                />
-              ),
-            })}
+            options={({ navigation }) => getHeaderOptions("Profissional da Saúde", navigation)}
           />
+
           <Stack.Screen
             name="Paciente"
             component={Paciente}
-            options={({ navigation }) => ({
-              headerTransparent: true,
-              headerTitleStyle: { color: "#fff" },
-              title: "Voltar",
-              headerLeft: () => (
-                <Ionicons
-                  name="arrow-back"
-                  size={24}
-                  color="#000"
-                  onPress={() => navigation.goBack()}
-                  style={{ marginLeft: 10, color: "#fff" }}
-                />
-              ),
-            })}
+            options={({ navigation }) => getHeaderOptions("Paciente", navigation)}
+          />
+
+          <Stack.Screen
+            style={{ flex: 1, justifyContent: "space-between" }}
+            name="Orientacoes"
+            component={Orientacoes}
+            options={({ navigation }) => getHeaderOptions("Orientações", navigation)}
+          />
+
+          <Stack.Screen
+            style={{ flex: 1, justifyContent: "space-between" }}
+            name="ConceitosImportantes"
+            component={ConceitosImportantes}
+            options={({ navigation }) => getHeaderOptions("Conceitos Importantes", navigation)}
+          />
+
+          <Stack.Screen
+            style={{ flex: 1, justifyContent: "space-between" }}
+            name="LinksUteis"
+            component={LinksUteis}
+            options={({ navigation }) => getHeaderOptions("Links Úteis", navigation)}
+          />
+
+          <Stack.Screen
+            style={{ flex: 1, justifyContent: "space-between" }}
+            name="Faq"
+            component={Faq}
+            options={({ navigation }) => getHeaderOptions("Dúvidas Frequentes", navigation)}
           />
 
         </Stack.Navigator>
