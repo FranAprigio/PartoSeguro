@@ -19,10 +19,9 @@ export const Text = styled.Text`
 
 `;
 export const Form = styled.View`
-  width: 100%;
-  padding: 16px 0;
-  margin-top: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex:1;
+  justify-content: space-around;
 `;
