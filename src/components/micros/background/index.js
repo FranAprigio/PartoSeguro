@@ -1,37 +1,20 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet } from 'react-native'
+import React from "react";
+import { StyleSheet } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-export const BackgroundComponent = ({ children, flexStyle, isOpacity }) => {
-    const isNull = flexStyle === 'null';
-    const estilo = isNull ? styles.containerNoFlex : styles.container;
-
-    let colors = ['#FCCCD4', '#FCE5BF', '#E3C3B9'];
-    function getColors() {
-        if (isOpacity === "true") {
-            colors = ['#FCCCD480', '#FCE5BF80', '#E3C3B980'];
-        }
-        return colors;
-    }
-
-    return (
-        <LinearGradient
-            colors={getColors()}
-            locations={[0.3, 0.6, 1]}
-            useAngle={true}
-            angle={180}
-            angleCenter={{ x: 0.5, y: 0.5 }}
-            style={estilo}
-        >
-            {children}
-        </LinearGradient>
-
-    );
+export const BackgroundComponent = ({ children, colors }) => {
+  return (
+    <LinearGradient
+      colors={colors?colors: ["#FCCCD4 33.02%", "#FCE5BF 30.12%", "#E3C3B9 15,63%"]}
+      style={styles.container}
+    >
+      {children}
+    </LinearGradient>
+  );
 };
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    containerNoFlex: {
-    }
-})
+  container: {
+    flex: 1,
+  },
+});

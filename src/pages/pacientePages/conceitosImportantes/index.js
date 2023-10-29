@@ -14,7 +14,7 @@ export const ConceitosImportantes = () => {
     ]
 
     return (
-        <BackgroundComponent>
+        <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
             <View style={styles.body}>
                 <SearchInput data={data} />
             </View>

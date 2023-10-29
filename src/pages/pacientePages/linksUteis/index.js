@@ -10,7 +10,7 @@ export const LinksUteis = () => {
         { pagina: "Link  #2", nav: "https://reactnative.dev" },
     ]
     return (
-        <BackgroundComponent>
+        <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
             <View style={styles.body}>
                 <SearchInput data={data} isOutLink={true} />
             </View>
