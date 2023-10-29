@@ -1,22 +1,24 @@
 import React from "react";
 import { BackgroundComponent } from "../../../components/micros";
-import { View, StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import SearchInput from "../../../components/search";
 
-
-export const LinksUteis = () => {
+export const PraticasAdvertidas = () => {
     const data = [
-        { pagina: "Link  #1", nav: "https://www.google.com" },
-        { pagina: "Link  #2", nav: "https://reactnative.dev" },
+        { pagina: "Praticas #1", nav: "Praticas1" },
+        { pagina: "Praticas #2", nav: "Praticas2" },
     ]
+
+
     return (
         <BackgroundComponent>
             <View style={styles.body}>
-                <SearchInput data={data} isOutLink={true} />
+                <SearchInput data={data} />
             </View>
         </BackgroundComponent>
     );
-};
+}
+
 
 
 const styles = StyleSheet.create({
@@ -25,5 +27,5 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         padding: 30,
         marginTop: 70,
-    }
+    }    
 })
