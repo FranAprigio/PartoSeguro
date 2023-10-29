@@ -14,18 +14,20 @@ import dont from '../../assets/icons/bx-comment-x.png'
 export const Profissional = () => {
   const navigation = useNavigation();
 
-  const handleSubmit = () => {
-    navigation.navigate("");
-  };
   return (
     <BackgroundComponent>
       <S.Container>
         <S.Form>
-          <ButtonComponent icon={book} arrow={go} label={"Estudo de Casos"} marginT={"10px 0 0 0"} onPress={handleSubmit} />
-          <ButtonComponent icon={concepts} arrow={go} id="mainConcepts" label={"Conceitos Importantes"} onPress={() => { navigation.navigate("ConceitosImportantes"); }} />
-          <ButtonComponent icon={dont} arrow={go} label={"Práticas Advertidas"} marginT={"10px 0 0 0"} onPress={handleSubmit} />
-          <ButtonComponent icon={faq} arrow={go} id="faq" label={"Dúvidas Frequentes"} onPress={() => { navigation.navigate("Faq"); }} />
-          <ButtonComponent icon={links} arrow={go} id="links" label={"Links Úteis"} onPress={() => { navigation.navigate("LinksUteis"); }} />
+          <ButtonComponent icon={book} arrow={go} label={"Estudo de Casos"} marginT={"10px 0 0 0"} 
+            onPress={() => { navigation.navigate("EstudoCasosProf") }} />
+          <ButtonComponent icon={concepts} arrow={go} id="mainConcepts" label={"Conceitos Importantes"} 
+            onPress={() => { navigation.navigate("ConceitosImportantesProf"); }} />
+          <ButtonComponent icon={dont} arrow={go} label={"Práticas Advertidas"} marginT={"10px 0 0 0"} 
+            onPress={() => { navigation.navigate("PraticasAdvertidas") }} />
+          <ButtonComponent icon={faq} arrow={go} id="faq" label={"Dúvidas Frequentes"} 
+            onPress={() => { navigation.navigate("DuvidasFrequentes"); }} />
+          <ButtonComponent icon={links} arrow={go} id="links" label={"Links Úteis"} 
+            onPress={() => { navigation.navigate("LinksUteisProf"); }} />
         </S.Form>
       </S.Container>
     </BackgroundComponent>

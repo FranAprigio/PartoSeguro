@@ -1,22 +1,23 @@
 import React from "react";
 import { BackgroundComponent } from "../../../components/micros";
-import { View, StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import SearchInput from "../../../components/search";
 
-
-export const LinksUteis = () => {
+export const DuvidasFrequentes = () => {
     const data = [
-        { pagina: "Link  #1", nav: "https://www.google.com" },
-        { pagina: "Link  #2", nav: "https://reactnative.dev" },
+        { pagina: "Duvida #1", nav: "DireitosSociais" },
+        { pagina: "Duvida #2", nav: "DireitosSaude" }
     ]
+
+
     return (
         <BackgroundComponent>
             <View style={styles.body}>
-                <SearchInput data={data} isOutLink={true} />
+                <SearchInput data={data} />
             </View>
         </BackgroundComponent>
-    );
-};
+    )
+}
 
 
 const styles = StyleSheet.create({
