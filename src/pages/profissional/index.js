@@ -2,36 +2,63 @@ import React from "react";
 import * as S from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import { BackgroundComponent, ButtonComponent } from "../../components/micros";
-
-//Icons imports
-import go from '../../assets/icons/arrow-right.png'
-import concepts from '../../assets/icons/bxs-layer.png'
-import faq from '../../assets/icons/question-circle.png'
-import links from '../../assets/icons/bx-link-alt.png'
-import book from '../../assets/icons/bx-book-bookmark.png'
-import dont from '../../assets/icons/bx-comment-x.png'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export const Profissional = () => {
   const navigation = useNavigation();
 
   return (
-    <BackgroundComponent>
+    <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
-          <ButtonComponent icon={book} arrow={go} label={"Estudo de Casos"} marginT={"10px 0 0 0"} 
-            onPress={() => { navigation.navigate("EstudoCasosProf") }} />
-          <ButtonComponent icon={concepts} arrow={go} id="mainConcepts" label={"Conceitos Importantes"} 
-            onPress={() => { navigation.navigate("ConceitosImportantesProf"); }} />
-          <ButtonComponent icon={dont} arrow={go} label={"Práticas Advertidas"} marginT={"10px 0 0 0"} 
-            onPress={() => { navigation.navigate("PraticasAdvertidas") }} />
-          <ButtonComponent icon={faq} arrow={go} id="faq" label={"Dúvidas Frequentes"} 
-            onPress={() => { navigation.navigate("DuvidasFrequentes"); }} />
-          <ButtonComponent icon={links} arrow={go} id="links" label={"Links Úteis"} 
-            onPress={() => { navigation.navigate("LinksUteisProf"); }} />
+
+          <ButtonComponent
+            onPress={() => { navigation.navigate("ConceitosImportantesProf"); }}
+            id="mainConcepts"
+            label="Conceitos Importantes"
+            weight={true}
+            icon={<Icon name="database" size={30} />}
+            arrow={<Icon name="caret-right" size={30} />}
+          />
+
+          <ButtonComponent
+            onPress={() => { navigation.navigate("EstudoCasosProf") }}
+            id="estudocaso"
+            label="Estudo de Casos"
+            weight={true}
+            icon={<Icon name="bookmark" size={30} />}
+            arrow={<Icon name="caret-right" size={30} />}
+          />
+
+          <ButtonComponent
+            onPress={() => { navigation.navigate("PraticasAdvertidas") }}
+            id="praticas"
+            label="Práticas Advertidas"
+            weight={true}
+            icon={<Icon name="exclamation-triangle" size={30} />}
+            arrow={<Icon name="caret-right" size={30} />}
+          />
+
+          <ButtonComponent
+            onPress={() => { navigation.navigate("DuvidasFrequentes"); }} 
+            id="faq"
+            label="Dúvidas Frequentes"
+            weight={true}
+            icon={<Icon name="question-circle" size={30} />}
+            arrow={<Icon name="caret-right" size={30} />}
+          />
+
+          <ButtonComponent
+            onPress={() => { navigation.navigate("LinksUteisProf"); }}
+            id="links"
+            label="Links Úteis"
+            weight={true}
+            icon={<Icon name="external-link-square" size={30} />}
+            arrow={<Icon name="caret-right" size={30} />}
+          />
+
         </S.Form>
       </S.Container>
     </BackgroundComponent>
-
   );
 };
-
