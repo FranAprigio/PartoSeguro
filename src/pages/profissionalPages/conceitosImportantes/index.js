@@ -7,7 +7,7 @@ export const ConceitosImportantesProf = () => {
   const data = [
     { pagina: "Direitos Sociais", nav: "DireitosSociais" },
     { pagina: "Direitos à Saúde", nav: "DireitosSaude" },
-    // { pagina: "Direitos do Usuário", nav: "DireitosUsuario" },
+    { pagina: "Direitos do Usuário", nav: "DireitosUsuario" },
     // { pagina: "Direitos do Paciente", nav: "DireitoPaciente" },
     // { pagina: "Direitos Médico", nav: "DireitosMedico" },
     // { pagina: "Universalidade", nav: "Universalidade" },

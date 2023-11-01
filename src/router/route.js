@@ -24,6 +24,7 @@ import {
   DireitosSociais,
   CartaoGestante,
   DireitosSaude,
+  DireitosUsuario,
 } from "../pages/profissionalPages/conceitosImportantes/subpages/index";
 import {
   PartoCesariana,
@@ -112,6 +113,11 @@ const Route = () => {
       page: "Direitos Saúde",
       name: "DireitosSaude",
       componente: DireitosSaude,
+    },
+    {
+      page: "Direitos Usuário",
+      name: "DireitosUsuario",
+      componente: DireitosUsuario,
     },
   ];
 
