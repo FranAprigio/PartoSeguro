@@ -1,71 +1,22 @@
 import * as S from "./styles";
-import { Image, StyleSheet } from 'react-native'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export const ButtonComponent = ({ onPress, label, backgroundColor, marginT, icon, arrow, flexStyle, weight }) => {
-  const [iconComp, setIconComp] = useState(null);
-  const [imgComp, setImgComp] = useState(null);
-  
-  
   const isNull = flexStyle === 'null';
-  const estilo = isNull ? styles.containerNoFlex : styles.container;
+  const estilo = isNull ? S.ContainerNoFlex : S.Container;
   
-  let marginLeft = styles.genContainer;
+  let marginLeft = S.genContainer;
   if ((icon !== null && icon !== undefined) && (arrow !== null && arrow !== undefined)){
-    marginLeft = styles.genContainerNoMargin;
+    marginLeft = S.genContainerNoMargin;
   }
 
-
-  useEffect(() => {
-    if (icon !== null && icon !== undefined) {
-      // Define o componente de imagem com base na condição do ícone
-      setIconComp(<Image source={icon} style={styles.icon} />);
-    }
-    if (arrow !== null && arrow !== undefined) {
-      // Define o componente de imagem com base na condição da seta
-      setImgComp(<Image source={arrow} style={styles.img} />);
-    }
-  }, [icon, arrow]);
-
   return (
-    <S.Container backgroundColor={backgroundColor} marginT={marginT} style={marginLeft}>
+    <S.Container backgroundColor={backgroundColor} marginT={marginT}>
       <S.Button style={estilo} onPress={onPress}>
-        {iconComp}
-        <S.Text style={weight? {fontWeight: "bold"} : weight} link={true} >{label}</S.Text>
-        {imgComp}
+        {icon && React.cloneElement(icon, { style: S.Icon })}
+        <S.Text style={{ margin: 0, ...weight && { fontWeight: "bold" }} } link={true}>{label}</S.Text>
+        {arrow && React.cloneElement(arrow, { style: S.img })}
       </S.Button>
     </S.Container>
   );
 };
-
-const styles = StyleSheet.create({
-  genContainerNoMargin:{
-
-  },
-  genContainer: {
-    marginLeft: "10%"
-  },
-  container: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 10,
-  },
-  containerNoFlex: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 10,
-  },
-  img: {
-    padding: 10,
-    width: 10,
-    height: 10,
-  },
-  icon: {
-    padding: 15,
-    marginTop: 15,
-    marginBottom: 15
-  },
-})

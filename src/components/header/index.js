@@ -1,7 +1,6 @@
 import React from 'react';
-import { TouchableOpacity, Image } from 'react-native';
-import arrow from "../../assets/icons/bxs-left-arrow.png"
-
+import { TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export const getHeaderOptions = (title, navigation) => {
     return {
@@ -14,7 +13,7 @@ export const getHeaderOptions = (title, navigation) => {
                 onPress={() => navigation.goBack()}
                 style={{ paddingHorizontal: 16 }}
             >
-                <Image source={arrow} style={{  }} />
+                <Icon name="caret-left" size={50} color="#6C0434" />
             </TouchableOpacity>
         ),
     };

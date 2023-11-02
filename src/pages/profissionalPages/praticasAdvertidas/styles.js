@@ -7,12 +7,14 @@ export const Container = styled.View`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
 `;
 
 export const Form = styled.View`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 100px;
   justify-content: space-around;
+  width: 90%;
+
 `;

@@ -6,22 +6,19 @@ import SearchInput from "../../../components/search";
 export const ConceitosImportantes = () => {
 
     const data = [
-        { pagina: "ConceitosImportantes Paciente #1", nav: "ConceitosImportantesPaciente1" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
+        { pagina: "Diretos Reprodutivo", nav: "DireitoReprodutivo" },
+        { pagina: "Cartão Gestante", nav: "CartaoGestante" },
+        { pagina: "Violência Obstétrica", nav: "ViolenciaObstetrica" },
     ]
 
     return (
-        <BackgroundComponent>
+        <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
             <View style={styles.body}>
                 <SearchInput data={data} />
             </View>
         </BackgroundComponent>
     );
 };
-
 
 
 const styles = StyleSheet.create({
@@ -32,3 +29,4 @@ const styles = StyleSheet.create({
         marginTop: 70,
     }
 })
+

@@ -8,7 +8,6 @@ export const PinkButtonComponent = ({ btnText, goToPage }) => {
     );
 };
 
-
 const styles = StyleSheet.create({
     btn: {
         backgroundColor: "#FCCCD4",

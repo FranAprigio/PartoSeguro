@@ -6,18 +6,17 @@ import SearchInput from "../../../components/search";
 
 export const LinksUteis = () => {
     const data = [
-        { pagina: "Link  #1", nav: "https://www.google.com" },
-        { pagina: "Link  #2", nav: "https://reactnative.dev" },
+        { pagina: "Cartilha Parto Seguro", nav: "http://www.mpgo.mp.br/portal/conteudo/cartilha-parto-seguro" },
+        { pagina: "Violência Obstétrica não se cale", nav: "https://www.naosecale.ms.gov.br/violencia-obstetrica/" },
     ]
     return (
-        <BackgroundComponent>
+        <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
             <View style={styles.body}>
                 <SearchInput data={data} isOutLink={true} />
             </View>
         </BackgroundComponent>
     );
 };
-
 
 const styles = StyleSheet.create({
     body: {
