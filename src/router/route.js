@@ -22,7 +22,7 @@ import {
 } from "../pages";
 import {
   DireitosSociais,
-  CartaoGestante,
+  //CartaoGestante,
   DireitosSaude,
   DireitosUsuario,
 } from "../pages/profissionalPages/conceitosImportantes/subpages/index";
@@ -38,6 +38,17 @@ import {
   ComoPreparar,
   DiferencaParto,
 } from "../pages/profissionalPages/duvidasFrequentes/subpages";
+
+import { 
+  DireitoReprodutivo, 
+  CartaoGestante, 
+  ViolenciaObstetrica  
+} from "../pages/pacientePages/conceitosImportantes/subpages";
+
+import { 
+  DireitosAcompanhante, 
+  PlanoParto 
+} from "../pages/pacientePages/orientacoes/subpages";
 
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +80,37 @@ const Route = () => {
       componente: ConceitosImportantes,
     },
   ];
+
+  const conceitosImportantesSubPagePaciente = [
+    {
+      page: "Direitos Reprodutivos",
+      name: "DireitoReprodutivo",
+      componente: DireitoReprodutivo,
+    },
+    {
+      page: "Cartão Gestante",
+      name: "CartaoGestante",
+      componente: CartaoGestante,
+    },
+    {
+      page: "Violência Obstétrica",
+      name: "ViolenciaObstetrica",
+      componente: ViolenciaObstetrica,
+    },
+  ];
+
+  const OrientacoesSubPage = [ 
+    {
+      page: "Direitos do Acompanhante?",
+      name: "DireitosAcompanhante",
+      componente: DireitosAcompanhante,
+    },
+    {
+      page: "Plano de Partos",
+      name: "PlanoParto",
+      componente: PlanoParto,
+    },
+   ];
 
   const profissionalPages = [
     {
@@ -182,6 +224,30 @@ const Route = () => {
 
           {/* Paginas do paciente */}
           {pacientePages.map((item, index) => (
+            <Stack.Screen
+              key={index}
+              style={{ flex: 1, justifyContent: "space-between" }}
+              name={item.name}
+              component={item.componente}
+              options={({ navigation }) =>
+                getHeaderOptions(item.page, navigation)
+              }
+            />
+          ))}
+
+          {conceitosImportantesSubPagePaciente.map((item, index) => (
+            <Stack.Screen
+              key={index}
+              style={{ flex: 1, justifyContent: "space-between" }}
+              name={item.name}
+              component={item.componente}
+              options={({ navigation }) =>
+                getHeaderOptions(item.page, navigation)
+              }
+            />
+          ))} 
+
+          {OrientacoesSubPage.map((item, index) => (
             <Stack.Screen
               key={index}
               style={{ flex: 1, justifyContent: "space-between" }}
