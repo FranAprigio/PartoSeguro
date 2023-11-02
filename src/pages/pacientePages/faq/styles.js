@@ -7,7 +7,6 @@ export const Container = styled.View`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
 `;
 
 export const Form = styled.View`
@@ -15,4 +14,5 @@ export const Form = styled.View`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  width: 80%;
 `;
