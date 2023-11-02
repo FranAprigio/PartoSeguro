@@ -6,11 +6,9 @@ import SearchInput from "../../../components/search";
 export const ConceitosImportantes = () => {
 
     const data = [
-        { pagina: "ConceitosImportantes Paciente #1", nav: "ConceitosImportantesPaciente1" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
-        { pagina: "ConceitosImportantes Paciente #2", nav: "ConceitosImportantesPaciente2" },
+        { pagina: "Diretos Reprodutivo", nav: "DireitoReprodutivo" },
+        { pagina: "Cartão Gestante", nav: "CartaoGestante" },
+        { pagina: "Violência Obstétrica", nav: "ViolenciaObstetrica" },
     ]
 
     return (
@@ -23,7 +21,6 @@ export const ConceitosImportantes = () => {
 };
 
 
-
 const styles = StyleSheet.create({
     body: {
         flex: 1,
@@ -32,3 +29,4 @@ const styles = StyleSheet.create({
         marginTop: 70,
     }
 })
+
