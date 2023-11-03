@@ -14,10 +14,13 @@ export const Text = styled.Text`
 `;
 
 const title1 = css`
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: #000E08;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: justify;
+  line-height: 30px;
+
+  color: #6c0434;
+  
 `;
 
 const title2 = css`
@@ -25,10 +28,9 @@ const title2 = css`
   letter-spacing: 0.1px;
   color: #797c7b;
   font-weight: 700;
-  font-size: 14px;
   line-height: 20px;
   text-align: center;
-  width: 65%;
+  
 `;
 
 const title3 = css`

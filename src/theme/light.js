@@ -3,6 +3,7 @@ const lightTheme = {
     primary: {
       1: "#FCE5BF",
       2: "#FCCCD4",
+      3: "#6c0434",
     },
     secondary: {
       1: "#f0ba71",
