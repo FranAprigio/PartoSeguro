@@ -9,14 +9,14 @@ export const DireitoReprodutivo = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-
-          Os direitos reprodutivos são uma parte fundamental dos direitos humanos e 
-          englobam uma série de questões relacionadas à tomada de decisões reprodutivas, 
-          à saúde reprodutiva e ao acesso a serviços de saúde relacionados à reprodução. 
-          Esses direitos visam garantir que as pessoas tenham o controle sobre suas decisões 
-          reprodutivas e o acesso a informações e serviços que lhes permitam tomar decisões 
-          informadas e seguras sobre sua saúde reprodutiva. Alguns aspectos dos direitos reprodutivos incluem:
-
+            Direito reprodutivo é o conjunto de direitos que envolve a 
+            capacidade das pessoas de tomar decisões relacionadas à 
+            reprodução de forma livre, informada e sem discriminação. 
+            Isso abrange a escolha de ter filhos, o acesso a métodos 
+            contraceptivos, o cuidado pré-natal, a assistência ao parto 
+            e a decisão sobre interrupção da gravidez, quando legal. 
+            Esse conceito visa garantir a autonomia e a dignidade das 
+            pessoas em questões reprodutivas.
           </TextComponent>
         </S.Form>
       </S.Container>

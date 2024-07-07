@@ -9,13 +9,21 @@ export const PlanoParto = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
+            O plano de parto é o documento que descreve as preferências da mulher no 
+            seu pré-parto, parto e pós-parto. Esse documento norteará a equipe médica 
+            quanto as suas preferências e permitirá que o momento do nascimento ocorra 
+            dentro das suas expectativas, sem limitar a conduta médica. 
 
-          Os planos de parto são documentos que as gestantes elaboram para expressar suas 
-          preferências e desejos relacionados ao trabalho de parto, parto e pós-parto. 
-          Eles são uma ferramenta para facilitar a comunicação entre a gestante, sua equipe 
-          de assistência médica e outros profissionais de saúde envolvidos no processo de parto. 
-          Abaixo, você encontrará um exemplo de um plano de parto que você pode usar 
-          como guia para criar o seu próprio:
+            Todas as gestantes tem direito a um plano de parto e os hospitais são obrigados 
+            a recebê-los. 
+            O plano de parto é a manifestação da autonomia da gestação e segunda a resolução 
+            nº 2.144/16, deve a equipe médica respeitar as decisões informadas e esclarecidas 
+            da gestante.
+
+            É importante que todas as mulheres saibam seus direitos para o processo de nascimento 
+            do seu filho, o pré-parto, parto e pós-parto são singulares na vida de cada mulher e sua 
+            autonomia pode e deve ser respeitada. 
+            O plano de parto viabiliza questionamentos formais em caso de alguma violação de sua vontade
 
           </TextComponent>
         </S.Form>

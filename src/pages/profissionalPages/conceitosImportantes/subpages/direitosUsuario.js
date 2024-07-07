@@ -9,16 +9,14 @@ export const DireitosUsuario = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-
-            As gestantes têm direitos específicos para proteger sua saúde e bem-estar durante
-            a gravidez. No contexto dos direitos do usuário gestante, é importante considerar as seguintes questões:
-
-            Direito à assistência médica pré-natal: As gestantes têm o direito de receber cuidados
-            médicos adequados durante a gravidez, incluindo consultas pré-natais regulares para monitorar o desenvolvimento do feto e a saúde da mãe.
-
-            Direito à informação: As gestantes têm o direito de receber informações claras
-            e precisas sobre sua saúde e a saúde do feto, incluindo exames médicos, procedimentos e opções de tratamento.
-
+          O direito do usuário refere-se às
+          garantias e proteções concedidas a 
+          pessoas que utilizam produtos, 
+          serviços ou sistemas, como consumidores, 
+          pacientes ou utilizadores de serviços públicos. 
+          Isso envolve o acesso a informações, segurança, 
+          privacidade e o direito de receber um tratamento 
+          justo e de qualidade.
           </TextComponent>
         </S.Form>
       </S.Container>

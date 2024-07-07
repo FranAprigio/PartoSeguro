@@ -9,12 +9,13 @@ export const DireitosSociais = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            Os direitos sociais da gestante são todos aqueles que
-            garantem à mulher atendimento em caixas especiais ou
-            prioridades na fila de bancos, supermercados, teatro,
-            cinema, etc. O acesso à porta da frente de lotações e
-            assento preferencial também são caracterizados como
-            direito social.
+            Direitos sociais são um conjunto de garantias
+            e benefícios que visam assegurar o bem-estar,
+            igualdade e dignidade dos cidadãos na sociedade, 
+            abrangendo áreas como educação, saúde, trabalho, 
+            previdência social e moradia. Eles são fundamentais 
+            para promover a justiça social e a qualidade de vida
+            da população.
           </TextComponent>
         </S.Form>
       </S.Container>
