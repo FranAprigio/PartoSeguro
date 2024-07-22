@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
 import * as S from "../styles"

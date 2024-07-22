@@ -1,19 +1,18 @@
-
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const PartoCesariana = () => {
+export const PartoVaginal = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            O parto cesariano é um procedimento cirúrgico em que o bebê é 
-            retirado do útero da mãe por meio de uma incisão no abdômen e 
-            no útero. A cesariana é uma intervenção cirúrgica utilizada como 
-            via de parto.
+           O parto vaginal é a vida de nascimento em que o bebê nasce pela vagina, 
+           de forma não cirúrgica. O parto vaginal pode ocorrer em diferentes posições 
+           e configurações, buscando uma experiência segura, saudável e confortável para 
+           mãe e bebê.
           </TextComponent>
         </S.Form>
       </S.Container>

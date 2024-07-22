@@ -1,19 +1,19 @@
-
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const PartoCesariana = () => {
+export const PUXO_DIRIGIDO = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            O parto cesariano é um procedimento cirúrgico em que o bebê é 
-            retirado do útero da mãe por meio de uma incisão no abdômen e 
-            no útero. A cesariana é uma intervenção cirúrgica utilizada como 
-            via de parto.
+           O puxo dirigido é uma técnica utilizada durante o segundo estágio do trabalho de 
+           parto, em que a parteira ou o médico instrui a gestante a realizar esforços ativos 
+           de empurrar durante as contrações, ajudando a expulsar o bebê. É a prática de pedir 
+           para a mulher fazer força e empurrar no momento do expulsivo, quando o bebê está prestes
+           a nascer.
           </TextComponent>
         </S.Form>
       </S.Container>

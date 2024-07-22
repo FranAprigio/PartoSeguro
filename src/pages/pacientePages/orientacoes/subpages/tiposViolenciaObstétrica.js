@@ -1,19 +1,17 @@
-
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const PartoCesariana = () => {
+export const TIPOS_DE_VIOLÊNCIA_OBSTÉTRICA = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            O parto cesariano é um procedimento cirúrgico em que o bebê é 
-            retirado do útero da mãe por meio de uma incisão no abdômen e 
-            no útero. A cesariana é uma intervenção cirúrgica utilizada como 
-            via de parto.
+            Física 
+            Moral
+            Psicológica
           </TextComponent>
         </S.Form>
       </S.Container>
