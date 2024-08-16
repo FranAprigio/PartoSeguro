@@ -2,6 +2,7 @@ import {
   BackgroundComponent,
   TextComponent,
 } from "../../../../components/micros";
+import * as S from "../styles"
 import { StyleSheet, View } from "react-native";
 
 export const RedeCegonha = () => {

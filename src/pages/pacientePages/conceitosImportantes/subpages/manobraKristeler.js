@@ -1,17 +1,16 @@
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
-import * as S from "../styles"
+import * as S from "../../orientacoes/styles"
 import { StyleSheet } from "react-native";
 
-export const CONSEQUÊNCIAS = () => {
+export const ManobraKristeler = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            Aumento da mortalidade materna
-            Sequelas físicas, emocionais e sexuais
-
+           Procedimento que consistem em pressionar o fundo uterino, 
+           ou seja, parte de cima da barriga da gestante, com a mão ou braços para empurrar o bebê para fora.
           </TextComponent>
         </S.Form>
       </S.Container>

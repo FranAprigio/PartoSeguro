@@ -3,18 +3,16 @@ import { BackgroundComponent, TextComponent } from "../../../../components/micro
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const DIREITO_A_PRESENÇA_INDEPENDENTE_DO_ACOMPANHAMTE = () => {
+export const DireitoConhecimento = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-              Como determinação legal, é de direito a presença de doula, além de 
-              acompanhante, durante o parto em maternidades e estabelecimentos 
-              congêneres da rede pública e privada, independentemente do espaço 
-              físico do centro obstétrico. Deste modo, cabe à administração desses 
-              serviços dar cumprimento à solicitação da parturiente, autorizando a 
-              presença de doula devidamente cadastrada previamente.
+          É direito reconhecido por lei, toda gestante assistida pelo Sistema Único de Saúde - SUS tem direito ao conhecimento e à vinculação prévia à: 
+          I - maternidade na qual será realizado seu parto; 
+          II - maternidade na qual ela será atendida nos casos de intercorrência pré-natal. 
+          Ou seja, é direito de toda gestante conhecer previamente a maternidade que seu bebê passará pelo processo de nascimento.
           </TextComponent>
         </S.Form>
       </S.Container>

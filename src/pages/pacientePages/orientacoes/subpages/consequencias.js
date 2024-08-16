@@ -3,16 +3,15 @@ import { BackgroundComponent, TextComponent } from "../../../../components/micro
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const PartoVaginal = () => {
+export const Consequencias = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-           O parto vaginal é a vida de nascimento em que o bebê nasce pela vagina, 
-           de forma não cirúrgica. O parto vaginal pode ocorrer em diferentes posições 
-           e configurações, buscando uma experiência segura, saudável e confortável para 
-           mãe e bebê.
+            Aumento da mortalidade materna
+            Sequelas físicas, emocionais e sexuais
+
           </TextComponent>
         </S.Form>
       </S.Container>

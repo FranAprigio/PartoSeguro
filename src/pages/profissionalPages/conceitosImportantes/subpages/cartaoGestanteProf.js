@@ -4,7 +4,7 @@ import {
 } from "../../../../components/micros";
 import { StyleSheet, View } from "react-native";
 
-export const CartaoGestante = () => {
+export const CartaoGestanteProf = () => {
   <BackgroundComponent colors={["#FCCCD4", "#FCE5BF", "#E3C3B9"]}>
     <View style={styles.body}>
       <TextComponent color={"black"}>
@@ -14,7 +14,7 @@ export const CartaoGestante = () => {
         importante para o acompanhamento da saúde da gestante e do bebê, facilitando 
         a comunicação entre a mulher grávida, os profissionais de saúde e a garantia 
         de cuidados adequados.
-      </TextComponent>
+        </TextComponent>
     </View>
   </BackgroundComponent>;
 };

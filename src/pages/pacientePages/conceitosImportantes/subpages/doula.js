@@ -1,17 +1,19 @@
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
-import * as S from "../styles"
+import * as S from "../../orientacoes/styles"
 import { StyleSheet } from "react-native";
 
-export const TIPOS_DE_VIOLÊNCIA_OBSTÉTRICA = () => {
+export const Doula = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            Física 
-            Moral
-            Psicológica
+           Uma doula é uma profissional de apoio emocional e físico que fornece assistência às gestantes 
+           antes, durante e após o parto. Elas oferecem conforto, encorajamento, informações e suporte não 
+           médico para ajudar as mulheres a terem experiências de parto mais positivas e empoderadas. 
+           As doulas não realizam procedimentos médicos, mas desempenham um papel no bem-estar emocional e no 
+           apoio durante o parto.
           </TextComponent>
         </S.Form>
       </S.Container>

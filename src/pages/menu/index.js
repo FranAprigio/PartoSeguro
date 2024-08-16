@@ -16,37 +16,32 @@ export const Menu = () => {
 
   return (
     <BackgroundComponent>
-
       <S.Container>
         <S.Form>
           <S.Text style={{ margin: 0, textAlign: "center", fontWeight: "300", lineHeight: 65 }}>
             Bem vindo(a) ao{"\n"}
-            <S.Text style={{fontWeight: "bold" }}>Parto Seguro</S.Text>
+            <S.BoldText>Parto Seguro</S.BoldText>
           </S.Text>
 
-          <ButtonComponent
-            label={"Profissional da Saúde"}
-            //backgroundColor={"rgba(252, 229, 191, 0.4)"}
-            onPress={handleSubmit1}
-            marginT={"15px"}
-            weight={true}
-            flexStyle={"null"}
-            style={{ paddingTop: 50, paddingBottom: 50 }}
-          />
+          <S.ButtonWrapper>
+            <ButtonComponent
+              label={"Profissional da Saúde"}
+              onPress={handleSubmit1}
+              marginT={"15px"}
+              weight={true}
+              style={{ paddingTop: 20, paddingBottom: 20 }}
+            />
 
-          <ButtonComponent
-            label={"Paciente"}
-            //backgroundColor={"rgba(252, 229, 191, 0.4)"}
-            onPress={handleSubmit2}
-            marginT={"15px"}
-            weight={true}
-            flexStyle={"null"}
-          />
+            <ButtonComponent
+              label={"Paciente"}
+              onPress={handleSubmit2}
+              marginT={"15px"}
+              weight={true}
+              style={{ paddingTop: 20, paddingBottom: 20 }}
+            />
+          </S.ButtonWrapper>
         </S.Form>
       </S.Container>
-
-
     </BackgroundComponent>
   );
 };
-

@@ -10,10 +10,22 @@ export const PartoCesariana = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            O parto cesariano é um procedimento cirúrgico em que o bebê é 
-            retirado do útero da mãe por meio de uma incisão no abdômen e 
-            no útero. A cesariana é uma intervenção cirúrgica utilizada como 
-            via de parto.
+
+            Histórico:
+            Maria, grávida de seu primeiro filho, desenvolve pré-eclâmpsia no terceiro trimestre, com dores abdominais severas e pressão alta.
+
+            Decisão Médica:
+            O obstetra decide que uma cesariana é necessária para garantir a segurança de Maria e do bebê.
+
+            Procedimento:
+            A cesariana é realizada com sucesso, garantindo um nascimento seguro.
+
+            Recuperação:
+            Maria e o bebê se recuperam bem com acompanhamento médico contínuo.
+
+            Consequências:
+            A cesariana foi vital para proteger a saúde da mãe e do bebê em caso de pré-eclâmpsia.
+
           </TextComponent>
         </S.Form>
       </S.Container>

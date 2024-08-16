@@ -1,6 +1,6 @@
 import React from 'react';
 import { BackgroundComponent, TextComponent } from "../../../../components/micros/index";
-import * as S from "../styles"
+import * as S from "../../orientacoes/styles"
 import { StyleSheet } from "react-native";
 
 export const Episiotomia = () => {
