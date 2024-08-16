@@ -5,4 +5,4 @@ export { DireitosAcompanhante } from "./direitosAcompanhante";
 export { PlanoPartoLegal } from "./planoPartoLegal";
 export { Doula } from "./doula";
 export { PasseiPorViolencia } from "./passeiPorViolencia";
-export { PraticasAdvertidas } from "./praticaAdvertidas";
+export { PraticasAdvertidasPaciente } from "./praticaAdvertidas";

@@ -34,7 +34,7 @@ export const Initial = () => {
         <Image
           source={require("../../assets/initial.png")}
           style={styles.image}
-          resizeMode="contain" // Ajusta o modo de redimensionamento para garantir que a imagem se ajuste ao contêiner
+          resizeMode="contain" 
         />
       </Animated.View>
     </View>
@@ -50,8 +50,8 @@ const styles = StyleSheet.create({
   imageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    width: 300, // Ajuste a largura conforme necessário
-    height: 300, // Ajuste a altura conforme necessário
+    width: 300, 
+    height: 300, 
   },
   image: {
     width: '100%',

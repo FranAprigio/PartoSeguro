@@ -4,7 +4,7 @@ import {
 } from "../../../../components/micros";
 import { StyleSheet, View } from "react-native";
 
-export const Imprudencia = () => {
+export const ImprudenciaProf = () => {
   <BackgroundComponent colors={["#FCCCD4", "#FCE5BF", "#E3C3B9"]}>
     <View style={styles.body}>
       <TextComponent color={"black"}>

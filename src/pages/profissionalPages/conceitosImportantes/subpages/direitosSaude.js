@@ -3,7 +3,7 @@ import { BackgroundComponent, TextComponent } from "../../../../components/micro
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const DireitosSaude = () => {
+export const DireitosSaudeProf = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>

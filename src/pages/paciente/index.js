@@ -13,14 +13,13 @@ export const Paciente = () => {
         <S.Form>
 
           <ButtonComponent
-            onPress={() => { navigation.navigate("ConceitosImportantes"); }}
+            onPress={() => { navigation.navigate("ConceitosImportantesPaciente"); }}
             id="mainConcepts"
             label="Conceitos Importantes"
             weight={true}
             icon={<Icon name="database" size={30} />}
             arrow={<Icon name="caret-right" size={30} />}
           />
-
           <ButtonComponent
             onPress={() => { navigation.navigate("Orientacoes"); }}
             id="orientation"
