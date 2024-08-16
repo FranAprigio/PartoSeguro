@@ -7,8 +7,15 @@ export const Orientacoes = () => {
 
     const data = [
         { pagina: "Direitos do Acompanhante", nav: "DireitosAcompanhante" },
-        { pagina: "Plano de Partos", nav: "PlanoParto" },
-    ]
+        { pagina: "Plano de Parto Legal", nav: "PlanoPartoLegal" },
+        { pagina: "Doula", nav: "Doula" },
+        { pagina: "Passei por Violência", nav: "PasseiPorViolencia" },
+        { pagina: "Práticas Advertidas", nav: "PraticasAdvertidas" },
+        { pagina: "Tipos de Violência Obstétrica", nav: "TiposViolenciaObstetrica" },
+        { pagina: "Consequências", nav: "Consequencias" },
+        { pagina: "Direito ao Conhecimento", nav: "DireitoConhecimento" },
+        { pagina: "Vinculação da Maternidade", nav: "VinculacaoDaMaternidade" }
+    ];
 
     return (
         <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
@@ -26,4 +33,4 @@ const styles = StyleSheet.create({
         padding: 30,
         marginTop: 70,
     }
-})
+});

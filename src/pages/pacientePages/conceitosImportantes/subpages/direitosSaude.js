@@ -3,20 +3,18 @@ import { BackgroundComponent, TextComponent } from "../../../../components/micro
 import * as S from "../styles"
 import { StyleSheet } from "react-native";
 
-export const PlanoParto = () => {
+export const DireitosSaude = () => {
   return (
     <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-
-          Os planos de parto são documentos que as gestantes elaboram para expressar suas 
-          preferências e desejos relacionados ao trabalho de parto, parto e pós-parto. 
-          Eles são uma ferramenta para facilitar a comunicação entre a gestante, sua equipe 
-          de assistência médica e outros profissionais de saúde envolvidos no processo de parto. 
-          Abaixo, você encontrará um exemplo de um plano de parto que você pode usar 
-          como guia para criar o seu próprio:
-
+            O direito à saúde é um princípio que assegura a todos os
+            indivíduos o acesso a serviços de saúde de qualidade, 
+            incluindo prevenção, tratamento e cuidados médicos. 
+            Este direito visa garantir o bem-estar físico e mental, 
+            bem como a igualdade no acesso aos serviços de saúde,
+            promovendo uma sociedade mais saudável e justa.
           </TextComponent>
         </S.Form>
       </S.Container>

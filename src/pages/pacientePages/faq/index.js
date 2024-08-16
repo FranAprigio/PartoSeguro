@@ -7,14 +7,14 @@ import * as S from './styles';
 
 export const Faq = () => {
 
-    // const data = [
-    //     { pagina: "Duvida  #1", nav: "Duvida1" },
-    //     { pagina: "Duvida  #2", nav: "Duvida2" },
-    //     { pagina: "Duvida  #2", nav: "Duvida2" },
-    //     { pagina: "Duvida  #2", nav: "Duvida2" },
-    //     { pagina: "Duvida  #2", nav: "Duvida2" },
-    //     { pagina: "Duvida  #2", nav: "Duvida2" },
-    // ]
+    const data = [
+        { pagina: "Duvida  #1", nav: "Duvida1" },
+        { pagina: "Duvida  #2", nav: "Duvida2" },
+        { pagina: "Duvida  #2", nav: "Duvida2" },
+        { pagina: "Duvida  #2", nav: "Duvida2" },
+        { pagina: "Duvida  #2", nav: "Duvida2" },
+        { pagina: "Duvida  #2", nav: "Duvida2" },
+    ]
 
     return (
         <BackgroundComponent colors={['#FCCCD4', '#FCE5BF', '#E3C3B9']}>

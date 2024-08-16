@@ -9,13 +9,12 @@ export const DireitosAcompanhante = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-
-            Os direitos dos acompanhantes, também conhecidos como "direitos dos acompanhantes de parto", 
-            são uma parte importante dos cuidados de saúde reprodutiva. Eles garantem que as gestantes 
-            tenham a opção de ter um ou mais acompanhantes durante o trabalho de parto, parto e pós-parto. 
-            Os direitos dos acompanhantes variam de acordo com as leis e políticas de saúde em diferentes 
-            regiões, mas incluem geralmente os seguintes aspectos
-
+            O direito ao acompanhante no parto refere-se à garantia legal e 
+            ética de que uma gestante tem o direito de ter a companhia de um 
+            acompanhante de sua escolha durante o trabalho de parto, parto e 
+            pós-parto. Esse acompanhante pode ser um familiar, parceiro ou 
+            qualquer pessoa de sua preferência, e sua presença visa proporcionar
+            apoio emocional, conforto e defesa dos direitos da gestante.
           </TextComponent>
         </S.Form>
       </S.Container>
