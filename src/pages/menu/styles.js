@@ -7,24 +7,32 @@ export const Container = styled(ImageBackground).attrs({
   opacity: 0.4
 })`
   flex: 1;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: rgba(252, 204, 212, 0.5);
 `;
 
 export const Text = styled.Text`
-  fontSize: ${lightTheme.fontSizes[40]};
+  font-size: ${lightTheme.fontSizes[40]};
   color: ${lightTheme.colors.primary[3]};
-  position: absolute;
-  top: 15%;
+  text-align: center;
+  margin-bottom: 20px;
 `;
+
+export const BoldText = styled(Text)`
+  font-weight: bold;
+`;
+
 export const Form = styled.View`
-  display: flex;
-  flex:1;
-  align-items: center;
-  flex-direction: column;
+  flex: 1;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+export const ButtonWrapper = styled.View`
+  width: 100%;
+  padding: 0 20px;
+  align-items: center;
 `;

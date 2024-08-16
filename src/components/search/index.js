@@ -9,22 +9,23 @@ export default function SearchInput({ data, isOutLink }) {
   const [searchText, setSearchText] = useState('');
 
   const filterData = (text) => {
-    const filteredItems = data.filter(item => item.pagina.toLowerCase().includes(text.toLowerCase()));
-    return filteredItems;
+    return data.filter(item => item.pagina.toLowerCase().includes(text.toLowerCase()));
   };
 
   const filteredData = filterData(searchText);
 
   return (
     <View>
-      <TextInput
-        style={styles.search}
-        placeholder="Pesquisar..."
-        onChangeText={text => setSearchText(text)}
-        value={searchText}
-      />
-      
-      <Icon style={styles.icon} name="search" size={25} color="#6C0434" />
+      <View style={styles.searchContainer}>
+        <Icon style={styles.icon} name="search" size={20} color="#6C0434" />
+        <TextInput
+          style={styles.search}
+          placeholder="Pesquisar..."
+          onChangeText={text => setSearchText(text)}
+          value={searchText}
+        />
+      </View>
+
       <ScrollView>
         {filteredData.map((item, index) => (
           <PinkButtonComponent
@@ -45,16 +46,21 @@ export default function SearchInput({ data, isOutLink }) {
 }
 
 const styles = StyleSheet.create({
+  searchContainer: {
+    position: 'relative',
+    marginBottom: 30,
+  },
   search: {
     borderRadius: 30,
     paddingLeft: 40,
-    padding: 5,
-    backgroundColor: "#D1D5DA",
-    marginBottom: 30
+    paddingVertical: 10,
+    backgroundColor: "#FFFFFF",
+    fontSize: 16,
   },
   icon: {
     position: 'absolute',
-    top: 7,
-    left: 10
-  }
+    top: '50%',
+    left: 10,
+    transform: [{ translateY: -10 }],
+  },
 });

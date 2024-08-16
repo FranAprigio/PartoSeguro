@@ -9,17 +9,11 @@ export const ViolenciaObstetrica = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-
-            A violência obstétrica refere-se a um conjunto de práticas e comportamentos abusivos, 
-            desrespeitosos e humilhantes que ocorrem durante a assistência ao parto e ao nascimento. 
-            Essas práticas violam os direitos reprodutivos e humanos das gestantes e podem ter sérias 
-            implicações físicas e emocionais. A violência obstétrica pode assumir várias formas, incluindo:
-
-            Falta de Consentimento Informado: Realizar procedimentos médicos sem o consentimento informado 
-            da gestante, como cesarianas, episiotomias, exames ou intervenções.
-
-            Intervenções Médicas Não Necessárias
-
+            A violência obstétrica refere-se a ações ou omissões, por parte 
+            de profissionais de saúde, que desrespeitam os direitos e a dignidade 
+            das mulheres durante o parto e o pós-parto. Isso pode incluir procedimentos 
+            invasivos não consentidos, tratamento desrespeitoso, discriminação, humilhação 
+            ou qualquer forma de abuso durante o processo de assistência ao parto.
           </TextComponent>
         </S.Form>
       </S.Container>

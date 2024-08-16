@@ -9,20 +9,12 @@ export const DireitosSaude = () => {
       <S.Container>
         <S.Form>
           <TextComponent variant="Title1">
-            Para que a mulher gestante garanta os seus direitos
-            trabalhistas ela deve, em primeiro lugar, de acordo com
-            o art. 392, parágrafo 1º da CLT (Consolidação das Leis
-            do Trabalho) solicitar uma declaração de
-            comparecimento junto ao serviço de saúde,
-            justificando a falta no trabalho. Isso deve ser feito em
-            todas as consultas do pré-natal.
-
-            A gestante também tem o direito de mudar de função
-            ou setor no seu trabalho.
-            Enquanto estiver grávida e até cinco meses após o
-            parto é assegurado à mulher estabilidade no emprego,
-            o que significa que ela não pode ser mandada embora
-            do trabalho (art. 391 da CLT).
+            O direito à saúde é um princípio que assegura a todos os
+            indivíduos o acesso a serviços de saúde de qualidade, 
+            incluindo prevenção, tratamento e cuidados médicos. 
+            Este direito visa garantir o bem-estar físico e mental, 
+            bem como a igualdade no acesso aos serviços de saúde,
+            promovendo uma sociedade mais saudável e justa.
           </TextComponent>
         </S.Form>
       </S.Container>

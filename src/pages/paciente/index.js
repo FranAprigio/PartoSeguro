@@ -49,9 +49,7 @@ export const Paciente = () => {
           />
 
         </S.Form>
-
       </S.Container>
     </BackgroundComponent>
   );
 };
-

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Dimensions, View } from 'react-native';
 import { WebView } from 'react-native-webview';
-import { BackgroundComponent } from '../micros';
 
 export const WebPage = ({ route }) => {
 
